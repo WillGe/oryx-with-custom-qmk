@@ -103,17 +103,17 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
     case ST_MACRO_0:
     if (record->event.pressed) {
-      SEND_STRING(SS_TAP(X_KP_ASTERISK) SS_DELAY(100) SS_TAP(X_KP_1));
+      SEND_STRING(SS_DOWN(X_KP_ASTERISK) SS_TAP(X_KP_1) SS_UP(X_KP_ASTERISK));
     }
     break;
     case ST_MACRO_1:
     if (record->event.pressed) {
-      SEND_STRING(SS_TAP(X_KP_ASTERISK) SS_DELAY(100) SS_TAP(X_KP_2));
+      SEND_STRING(SS_DOWN(X_KP_ASTERISK) SS_TAP(X_KP_2) SS_UP(X_KP_ASTERISK));
     }
     break;
     case ST_MACRO_2:
     if (record->event.pressed) {
-      SEND_STRING(SS_TAP(X_KP_ASTERISK) SS_DELAY(100) SS_TAP(X_KP_3));
+      SEND_STRING(SS_DOWN(X_KP_ASTERISK) SS_TAP(X_KP_3) SS_UP(X_KP_ASTERISK));
     }
     break;
     case ST_MACRO_3:
