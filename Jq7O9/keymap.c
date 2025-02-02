@@ -127,27 +127,27 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     break;
     case ST_MACRO_2:
     if (record->event.pressed) {
-      SEND_STRING(SS_TAP(X_KP_ASTERISK) SS_DELAY(100) SS_TAP(X_KP_1));
+      SEND_STRING(SS_DOWN(X_KP_ASTERISK) SS_TAP(X_KP_1) SS_UP(X_KP_ASTERISK));
     }
     break;
     case ST_MACRO_3:
     if (record->event.pressed) {
-      SEND_STRING(SS_TAP(X_KP_ASTERISK) SS_DELAY(100) SS_TAP(X_KP_2));
+      SEND_STRING(SS_DOWN(X_KP_ASTERISK) SS_TAP(X_KP_2) SS_UP(X_KP_ASTERISK));
     }
     break;
     case ST_MACRO_4:
     if (record->event.pressed) {
-      SEND_STRING(SS_TAP(X_KP_ASTERISK) SS_DELAY(100) SS_TAP(X_KP_3));
+      SEND_STRING(SS_DOWN(X_KP_ASTERISK) SS_TAP(X_KP_3) SS_UP(X_KP_ASTERISK));
     }
     break;
     case ST_MACRO_5:
     if (record->event.pressed) {
-      SEND_STRING(SS_TAP(X_KP_ASTERISK) SS_DELAY(100) SS_TAP(X_KP_4));
+      SEND_STRING(SS_DOWN(X_KP_ASTERISK) SS_TAP(X_KP_4) SS_UP(X_KP_ASTERISK));
     }
     break;
     case ST_MACRO_6:
     if (record->event.pressed) {
-      SEND_STRING(SS_TAP(X_KP_ASTERISK) SS_DELAY(100) SS_TAP(X_F10));
+      SEND_STRING(SS_DOWN(X_KP_ASTERISK) SS_TAP(X_F10) SS_UP(X_KP_ASTERISK));
     }
     break;
 
